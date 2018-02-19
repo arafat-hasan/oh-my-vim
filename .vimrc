@@ -210,6 +210,7 @@ nnoremap <leader>yR :YcmShowDetailedDiagnostic <CR>
 nnoremap <leader>yl :YcmDiags <CR>
 nnoremap <leader>yf :YcmCompleter FixIt <CR>
 nnoremap <leader>yg :YcmCompleter GoTo <CR>
+nnoremap ,f :YcmShowDetailedDiagnostic <CR>
 
 " ================= PLUGIN CONFIG AND VAR END ==================
 
@@ -220,8 +221,8 @@ nnoremap <leader>yg :YcmCompleter GoTo <CR>
 "////////////////////////// FORMATTING START ///////////////////////////////////
 
 "aristic style must be installed for this
-nnoremap  <silent> ,f :execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
-inoremap  <silent> ,f <ESC>:execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
+nnoremap  <silent> ,a :execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
+inoremap  <silent> ,a <ESC>:execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
 
 " Colorscheme
 map :cl1 :colorscheme morning<CR>
@@ -234,6 +235,7 @@ map :lht :set background=light<CR>
 inoremap {<CR>  {<CR>}<Esc>O
 
 
+nnoremap  <silent> ,z :!clear<CR>
 
 "////////////////////////// FORMATTING END ///////////////////////////////////
 
@@ -266,6 +268,7 @@ inoremap  <silent> <C-k> <Esc>:m .-2<CR>==gi
 vnoremap  <silent> <C-k> :m '<-2<CR>gv=gv
 map <S-j> 10j
 map <S-k> 10k
+inoremap jk <esc>
 
 
 " ============= Un/Comment debug =======================
@@ -329,6 +332,9 @@ set smartindent " Use intelligent indentation for C
 
 " configure tabwidth and insert spaces instead of tabs
 set tabstop=4        " tab width is 4 spaces
+set softtabstop=4   " number of spaces in tab when editing
+
+
 set shiftwidth=4     " indent also with 4 spaces
 set expandtab        " expand tabs to spaces
 
@@ -341,6 +347,8 @@ set cursorline
 syntax enable
 set background=dark
 colorscheme solarized
+
+filetype indent on      " load filetype-specific indent files
 
 
 set number                          " turn line numbers on
