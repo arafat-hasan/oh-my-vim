@@ -215,6 +215,7 @@ nnoremap ,f :YcmShowDetailedDiagnostic <CR>
 " ================= PLUGIN CONFIG AND VAR END ==================
 
 
+
 "//////////////////////////////// VUNDLE END ///////////////////////////////////
 
 
