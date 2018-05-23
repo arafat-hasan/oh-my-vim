@@ -1,5 +1,5 @@
  "
- " FILE: .vimrc
+ " FILE: vimrc
  "
  " @author: Md. Arafat Hasan Jenin <arafathasanjenin[at]gmail[dot]com>
  "
@@ -74,7 +74,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
-Plugin 'AHJenin/cfparser.vim'
+Plugin 'gabrielsimoes/cfparser.vim'
 "Plugin 'Igorjan94/codeforces.vim'
 "Plugin 'junegunn/vim-easy-align'    "Dependency for Igorjan94/codeforces.vim
 Plugin 'christoomey/vim-run-interactive'
@@ -398,4 +398,5 @@ augroup END
 
 
 "map <leader>s :call MySplit()<CR><CR>
+
 
