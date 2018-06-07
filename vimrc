@@ -378,7 +378,6 @@ augroup END
 
 
 
-
 "let g:is_IOwindow_open = 0
 
 "function! Prepare_IO_window()
