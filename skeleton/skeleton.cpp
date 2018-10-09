@@ -1,19 +1,19 @@
 /*
- * FILE: {{untitled}}
+ * FILE: {untitled}
  *
- * @author: Arafat Hasan Jenin <arafathasanjenin[at]gmail[dot]com>
+ * @author: {developer} <{mail}>
  *
  * LINK:
  *
- * DATE CREATED: {{long_date}}
- * LAST MODIFIED: __last_modified
+ * DATE CREATED: {datetime}
+ * LAST MODIFIED: 
  *
- * DESCRIPTION:
+ * VERDICT: {verdict}
  *
  * DEVELOPMENT HISTORY:
  * Date         Version     Description
  * --------------------------------------------------------------------
- * {{short_date}}     1.0         {{File Created}}
+ * {date}     {version}         {description}
  *
  *               _/  _/_/_/_/  _/      _/  _/_/_/  _/      _/
  *              _/  _/        _/_/    _/    _/    _/_/    _/
@@ -40,6 +40,7 @@
 #include <list>
 #include <map>
 #include <unordered_map>
+#include <unordered_set>
 #include <queue>
 #include <deque>
 #include <vector>

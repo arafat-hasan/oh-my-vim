@@ -67,7 +67,9 @@ Plugin 'VundleVim/Vundle.vim'
 
 "=================== MY BUNDLES START ===============
 " original repos on GitHub:
+
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'Chiel92/vim-autoformat'
 Plugin 'gmarik/vundle'
 Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
@@ -201,6 +203,21 @@ let g:ycm_key_invoke_completion = '<C-Space>'
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
 
+" vim_cp configs start
+
+
+let g:developer="Arafat Hasan Jenin"
+let g:mail="opendoor.arafat[at]gmail[dot]com"
+let g:version="1.0"
+let g:description="Deleted code is debugged code."
+let g:verdict="Almost Accepted"
+let g:verdict_row=11    "Row and col number to write verdict
+let g:verdict_col=12    "Row and col number to write verdict
+
+" vim_cp configs end
+
+
+
 
 " mappings
 map :N :NERDTree<CR>
@@ -222,8 +239,12 @@ nnoremap ,f :YcmShowDetailedDiagnostic <CR>
 "////////////////////////// FORMATTING START ///////////////////////////////////
 
 "aristic style must be installed for this
-nnoremap  <silent> ,a :execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
-inoremap  <silent> ,a <ESC>:execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
+
+nnoremap  <silent> ,a :Autoformat<CR>
+inoremap  <silent> ,a <ESC>:Autoformat<CR>
+
+"nnoremap  <silent> ,a :execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
+"inoremap  <silent> ,a <ESC>:execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
 
 " Colorscheme
 map :cl1 :colorscheme morning<CR>
@@ -400,3 +421,6 @@ augroup END
 "map <leader>s :call MySplit()<CR><CR>
 
 
+
+
+map <leader>w :!nasm -f elf32 '%:p' -o a.o  && ld -m elf_i386 a.o -o a.out && ./a.out<CR>
