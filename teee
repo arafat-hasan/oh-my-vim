@@ -91,7 +91,6 @@ Plugin 'AHJenin/vim_cp'
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'milkypostman/vim-togglelist'
 "Plugin 'tpope/vim-dispatch'
-Plugin 'terryma/vim-multiple-cursors'
 
 " non-GitHub repos
 "Plugin 'git://git.wincent.com/command-t.git'
@@ -425,4 +424,3 @@ augroup END
 
 
 map <leader>w :!nasm -f elf32 '%:p' -o a.o  && ld -m elf_i386 a.o -o a.out && ./a.out<CR>
-
