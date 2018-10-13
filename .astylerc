@@ -28,6 +28,10 @@
 --break-blocks=all
 --pad-oper
 --pad-comma
---pad-paren-out
+#--pad-paren-out # ((something)) becomes ( (something) )
+--pad-first-paren-out
+--delete-empty-lines
+--pad-header
+
 --delete-empty-lines
 
