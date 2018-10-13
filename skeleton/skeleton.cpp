@@ -1,7 +1,7 @@
 /*
  * FILE: {{untitled}}
  *
- * @author: Arafat Hasan Jenin <arafathasanjenin[at]gmail[dot]com>
+ * @author: Arafat Hasan Jenin <opendoor.arafat[at]gmail[dot]com>
  *
  * LINK:
  *

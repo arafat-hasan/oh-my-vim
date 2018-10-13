@@ -89,6 +89,7 @@ Plugin 'AHJenin/vim_cp'
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'milkypostman/vim-togglelist'
 "Plugin 'tpope/vim-dispatch'
+Plugin 'terryma/vim-multiple-cursors'
 
 " non-GitHub repos
 "Plugin 'git://git.wincent.com/command-t.git'
