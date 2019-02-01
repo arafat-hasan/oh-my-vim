@@ -53,7 +53,7 @@ Plugin 'milkypostman/vim-togglelist'
 "Plugin 'tpope/vim-dispatch'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-surround'
-Plugin 'AHJenin/vim_cp'
+Plugin 'arafat-hasan/vim_cp'
 
 " non-GitHub repos
 "Plugin 'git://git.wincent.com/command-t.git'
