@@ -6,7 +6,7 @@
  * LINK:
  *
  * DATE CREATED: {datetime}
- * LAST MODIFIED: 
+ * LAST MODIFIED:
  *
  * VERDICT: {verdict}
  *
@@ -63,8 +63,6 @@ typedef vector<long long>   vl;
 
 #define _USE_MATH_DEFINES
 
-#define _FastIO        ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0)
-
 #define forr(i, a, b)   for (__typeof (a) i = (a); i <= (b); i++)
 #define rof(i, b, a)    for (__typeof (a) i = (b); i >= (a); i--)
 #define rep(i, n)       for (__typeof (n) i = 0; i < (n); i++)
@@ -101,7 +99,6 @@ typedef vector<long long>   vl;
 ////////////////////////// START HERE //////////////////////////
 
 int main() {
-    _FastIO;
+    ios_base::sync_with_stdio (false); cin.tie (0); cout.tie (0);
     return 0;
 }
-

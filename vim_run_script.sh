@@ -38,7 +38,7 @@ then
     echo "Program exited with code: $return"
     printf "Execution time: %.6f seconds" $dur
     echo
-    echo "What's about Jenin? :-)"
+    #echo "What's about Jenin? :-)"
     echo "Press return to continue..."
     dummy_var=""
     read dummy_var
@@ -46,10 +46,10 @@ then
 
 elif [ "$1" == "i" ]
 then
-    echo
-    echo "==============================================="
-    echo "Input from input.txt and write output to stdout"
-    echo "==============================================="
+    #echo
+    #echo "==============================================="
+    #echo "Input from input.txt and write output to stdout"
+    #echo "==============================================="
     start=$(date +%s.%N)
     
     if [ "$extension" == "c" ] || [ "$extension" == "cpp" ]
@@ -68,7 +68,7 @@ then
     echo "Program exited with code: $return"
     printf "Execution time: %.6f seconds" $dur
     echo
-    echo "What's about Jenin? :-)"
+    #echo "What's about Jenin? :-)"
     echo "Press return to continue..."
     dummy_var=""
     read dummy_var
@@ -77,9 +77,9 @@ then
 elif [ "$1" == "io" ]
 then
     echo
-    echo "==================================================="
+    #echo "==================================================="
     echo "Input from input.txt and write output to output.txt"
-    echo "==================================================="
+    #echo "==================================================="
     echo "Running..."
     start=$(date +%s.%N)
     
@@ -101,7 +101,7 @@ then
     echo "Program exited with code: $return"
     printf "Execution time: %.6f seconds" $dur
     echo
-    echo "What's about Jenin? :-)"
+    #echo "What's about Jenin? :-)"
     echo "Press return to continue..."
     dummy_var=""
     read dummy_var

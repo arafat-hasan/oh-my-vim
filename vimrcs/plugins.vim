@@ -41,17 +41,19 @@ Plugin 'gabrielsimoes/cfparser.vim'
 Plugin 'christoomey/vim-run-interactive'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ex-surreal/vim-std-io'
+
 "----Following used by snipmate----
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-Plugin 'honza/vim-snippets'
-Plugin 'AHJenin/vim_cp'
+Plugin 'honza/vim-snippets' "This repository contains snippets files for various programming languages.
+"
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'milkypostman/vim-togglelist'
 "Plugin 'tpope/vim-dispatch'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-surround'
+Plugin 'AHJenin/vim_cp'
 
 " non-GitHub repos
 "Plugin 'git://git.wincent.com/command-t.git'
