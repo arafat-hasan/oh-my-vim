@@ -1,19 +1,19 @@
 /*
- * FILE: {untitled}
+ * FILE: {{untitled}}
  *
- * @author: {developer} <{mail}>
+ * @author: Arafat Hasan Jenin <arafathasanjenin[at]gmail[dot]com>
  *
  * LINK:
  *
- * DATE CREATED: {datetime}
- * LAST MODIFIED:
+ * DATE CREATED: {{long_date}}
+ * LAST MODIFIED: __last_modified
  *
- * VERDICT: {verdict}
+ * DESCRIPTION:
  *
  * DEVELOPMENT HISTORY:
  * Date         Version     Description
  * --------------------------------------------------------------------
- * {date}     {version}         {description}
+ * {{short_date}}     1.0         {{File Created}}
  *
  *               _/  _/_/_/_/  _/      _/  _/_/_/  _/      _/
  *              _/  _/        _/_/    _/    _/    _/_/    _/
@@ -40,11 +40,11 @@
 #include <list>
 #include <map>
 #include <unordered_map>
-#include <unordered_set>
 #include <queue>
 #include <deque>
 #include <vector>
 #include <tuple>
+#include <iterator> // std::istream_iterator
 #include <stdint.h> //uint32_t
 #include <functional>
 #include <bitset>
@@ -62,6 +62,8 @@ typedef vector<int>         vi;
 typedef vector<long long>   vl;
 
 #define _USE_MATH_DEFINES
+
+#define _FastIO        ios_base::sync_with_stdio(false); cin.tie(0); cout.tie(0)
 
 #define forr(i, a, b)   for (__typeof (a) i = (a); i <= (b); i++)
 #define rof(i, b, a)    for (__typeof (a) i = (b); i >= (a); i--)
@@ -99,6 +101,7 @@ typedef vector<long long>   vl;
 ////////////////////////// START HERE //////////////////////////
 
 int main() {
-    ios_base::sync_with_stdio (false); cin.tie (0); cout.tie (0);
+    _FastIO;
     return 0;
 }
+

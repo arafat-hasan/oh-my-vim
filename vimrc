@@ -60,7 +60,7 @@ set mouse=a
 
 
 " Default directory
-cd /media/Softwares/Programming
+cd /media/jenin/Softwares/Programming
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
