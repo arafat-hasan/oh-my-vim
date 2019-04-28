@@ -21,7 +21,7 @@ endif
 
 
 " mappings
-map :N :NERDTree<CR>
+map <F2> :NERDTreeToggle<CR>
 
 nnoremap <leader>yr :YcmForceCompileAndDiagnostics <CR>
 nnoremap <leader>yR :YcmShowDetailedDiagnostic <CR>

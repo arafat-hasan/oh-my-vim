@@ -60,7 +60,7 @@ set mouse=a
 
 
 " Default directory
-cd /media/jenin/Softwares/Programming
+cd /media/arafat_hasan/Work/Programming
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
