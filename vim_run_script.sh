@@ -15,10 +15,10 @@
 # 
 
 filename=$(basename "$2")
+filenameWithPath=$2
 filename_without_ex=${filename%.*}
 #filename_ex="${filename%.*}"
 extension=${filename##*.}
-
 
 if [ "$1" == "stdio" ]
 then
@@ -32,12 +32,11 @@ then
         #java $filename_without_ex
 	elif [ "$extension" == "py" ]
 	then
-		python3 $filename
+		python3 $filenameWithPath
 	elif [ "$extension" == "sh" ]
 	then
-		bash $filename
-	elif
-	then
+		bash $filenameWithPath
+	else
         echo "File Format Not Recognized [in run-script]"
     fi
     return=$?
@@ -70,12 +69,11 @@ then
         #java $filename_without_ex < input.txt
 	elif [ "$extension" == "py" ]
 	then
-		python3 $filename < input.txt
+		python3 $filenameWithPath < input.txt
 	elif [ "$extension" == "sh" ]
 	then
-		bash $filename < input.txt
-	elif
-	then
+		bash $filenameWithPath < input.txt
+	else
         echo "File Format Not Recognized [in run-script]"
     fi
  
@@ -110,12 +108,11 @@ then
         #java $filename_without_ex < input.txt > output.txt
 	elif [ "$extension" == "py" ]
 	then
-		python3 $filename < input.txt > output.txt
+		python3 $filenameWithPath < input.txt > output.txt
 	elif [ "$extension" == "sh" ]
 	then
-		bash $filename < input.txt > output.txt
-	elif
-	then
+		bash $filenameWithPath < input.txt > output.txt
+	else
         echo "File Format Not Recognized [in run-script]"
     fi
 
