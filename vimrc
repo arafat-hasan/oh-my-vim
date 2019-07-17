@@ -65,6 +65,9 @@ set mouse=a
 " Default directory
 cd /media/arafat_hasan/Work/Programming
 
+" Automatically change the current directory
+autocmd BufEnter * silent! lcd %:p:h
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
