@@ -145,8 +145,10 @@ set colorcolumn=80
 " Enable syntax highlighting
 syntax enable
 
-
-set guifont=Ubuntu\ Mono\ 13
+if has("gui_running")
+	set guifont=Ubuntu\ Mono\ 13
+	set linespace=3
+endif
 
 " Enable 256 colors palette in Gnome Terminal
 if $COLORTERM == 'gnome-terminal'
@@ -240,6 +242,7 @@ set wrap
 set autoindent
 " Use intelligent indentation for C
 set smartindent
+
 
 
 " Return to last edit position when opening files (You want this!)
