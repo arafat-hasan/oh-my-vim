@@ -56,6 +56,9 @@ let mapleader = ","
 set nocompatible
 
 
+let $LANG = 'en_US'
+set langmenu=en_US.UTF-8
+
 set mouse=a
 
 
