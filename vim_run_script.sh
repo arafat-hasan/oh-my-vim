@@ -30,6 +30,15 @@ then
     then
         java Main
         #java $filename_without_ex
+	elif [ "$extension" == "py" ]
+	then
+		python3 $filename
+	elif [ "$extension" == "sh" ]
+	then
+		bash $filename
+	elif
+	then
+        echo "File Format Not Recognized [in run-script]"
     fi
     return=$?
     dur=$(echo "$(date +%s.%N) - $start" | bc)
@@ -59,6 +68,15 @@ then
     then
         java Main < input.txt
         #java $filename_without_ex < input.txt
+	elif [ "$extension" == "py" ]
+	then
+		python3 $filename < input.txt
+	elif [ "$extension" == "sh" ]
+	then
+		bash $filename < input.txt
+	elif
+	then
+        echo "File Format Not Recognized [in run-script]"
     fi
  
     return=$?
@@ -90,6 +108,15 @@ then
     then
         java Main < input.txt > output.txt
         #java $filename_without_ex < input.txt > output.txt
+	elif [ "$extension" == "py" ]
+	then
+		python3 $filename < input.txt > output.txt
+	elif [ "$extension" == "sh" ]
+	then
+		bash $filename < input.txt > output.txt
+	elif
+	then
+        echo "File Format Not Recognized [in run-script]"
     fi
 
     return=$?
