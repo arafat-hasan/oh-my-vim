@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 #
 # FILE: {untitled}
 #
@@ -8,8 +9,6 @@
 #
 # DATE CREATED: {datetime}
 # LAST MODIFIED:  
-#
-# VERDICT: {verdict}
 #
 # DEVELOPMENT HISTORY:
 # Date         Version     Description

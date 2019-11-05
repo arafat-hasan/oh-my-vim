@@ -152,7 +152,7 @@ set colorcolumn=80
 syntax enable
 
 if has("gui_running")
-	set guifont=Ubuntu\ Mono\ 13
+	set guifont=Ubuntu\ Mono\ 14
 	set linespace=3
 endif
 
@@ -240,7 +240,7 @@ set tabstop=4
 set linebreak
 " Linebreak on 80 characters
 " wrap lines at 110 chars. 80 is somewaht antiquated with nowadays displays.
-set textwidth=80
+" set textwidth=80
 
 "Wrap lines
 set wrap
