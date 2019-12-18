@@ -36,14 +36,6 @@ nnoremap ,f :YcmShowDetailedDiagnostic <CR>
 
 "//////////////////////////////// VUNDLE END ///////////////////////////////////
 
-
-"////////////////////////// FORMATTING START ///////////////////////////////////
-
-"aristic style must be installed for this
-
-nnoremap  <silent> ,a :Autoformat<CR>
-inoremap  <silent> ,a <ESC>:Autoformat<CR>
-
 "nnoremap  <silent> ,a :execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
 "inoremap  <silent> ,a <ESC>:execute "normal ma" <bar> %!astyle <CR> :execute "normal `a" <CR> zz
 
@@ -60,7 +52,15 @@ map :lht :set background=light<CR>
 
 nnoremap  <silent> ,z :!clear<CR>
 
+
+noremap <F3> :Autoformat<CR>
+inoremap  <F3> <ESC>:Autoformat<CR>
+
+
+
 "////////////////////////// FORMATTING END ///////////////////////////////////
+
+
 
 
 " ================== Window Slpiting, Status Bar ==================

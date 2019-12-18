@@ -43,6 +43,7 @@ Plugin 'gabrielsimoes/cfparser.vim'
 Plugin 'christoomey/vim-run-interactive'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ex-surreal/vim-std-io'
+Plugin 'lervag/vimtex'
 
 "----Following used by snipmate----
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -174,6 +175,11 @@ let g:description="Deleted code is debugged code."
 let g:verdict="Almost Accepted"
 let g:verdict_row=11    "Row and col number to write verdict
 let g:verdict_col=12    "Row and col number to write verdict
+
+
+
+"https://github.com/Chiel92/vim-autoformat
+let g:formatter_yapf_style = 'google'
 
 " vim_cp configs end
 
