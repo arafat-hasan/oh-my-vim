@@ -171,4 +171,11 @@ augroup END
 
 map <leader>w :!nasm -f elf32 '%:p' -o a.o  && ld -m elf_i386 a.o -o a.out && ./a.out<CR>
 
+function! Togglecolor()
+    if &background=='dark'
+        exec('set background=light')
+    else
+        exec('set background=dark')
+    endif
+endfunction
 
