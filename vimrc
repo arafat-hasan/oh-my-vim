@@ -1,7 +1,7 @@
 "
 " FILE: vimrc
 "
-" @author: Md. Arafat Hasan Jenin <arafathasanjenin[at]gmail[dot]com>
+" @author: Md. Arafat Hasan Jenin   <arafathasanjenin[at]gmail[dot]com>
 "
 " LINK:
 "
@@ -138,10 +138,10 @@ endif
 
 " Add a bit extra margin to the left
 set foldcolumn=1
-
-
+set foldmethod=syntax
+set foldlevel=99
 "highlight ColorColumn ctermbg=234
-set colorcolumn=80
+set colorcolumn=81
 
 
 
@@ -232,8 +232,8 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 
 " don't wrap textin the middle of a word
@@ -274,7 +274,22 @@ set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+inoremap {<CR> {<CR>}<C-o>O
+
 source ~/.vim/vimrcs/plugins.vim
 source ~/.vim/vimrcs/mappings.vim
 
+
+
+"quick fix window heght
+let g:pymode_quickfix_minheight = 3
+let g:pymode_quickfix_maxheight = 6
+
+"let g:pymode_preview_height = &previewheight
+
+"close all preview windows and quickfix windows
+noremap <Leader>c :ccl <bar> lcl <bar> pc<CR>
+
+
+let g:pymode_preview_position = 'botright'
 

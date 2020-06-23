@@ -44,6 +44,8 @@ Plugin 'christoomey/vim-run-interactive'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ex-surreal/vim-std-io'
 Plugin 'lervag/vimtex'
+Plugin 'junegunn/goyo.vim'
+Plugin 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
 "----Following used by snipmate----
 Plugin 'MarcWeber/vim-addon-mw-utils'

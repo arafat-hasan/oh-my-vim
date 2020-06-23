@@ -5,21 +5,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-nmap <A-i> :echo "asdf"<CR>
-" Move a line of text using ALT+[jk] or Command+[jk] on mac
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
-
-if has("mac") || has("macunix")
-  nmap <D-j> <M-j>
-  nmap <D-k> <M-k>
-  vmap <D-j> <M-j>
-  vmap <D-k> <M-k>
-endif
-
-
 " mappings
 map <F2> :NERDTreeToggle<CR>
 
@@ -83,14 +68,13 @@ map <silent> <F12> :set laststatus=2<CR>
 "After visually selecting a block of lines (for example, by pressing V then moving the cursor down),
 "press clt-j to move the whole block down, or press clt-k to move the block up
 
-nnoremap  <silent> <C-j> :m .+1<CR>==
-inoremap  <silent> <C-j> <Esc>:m .+1<CR>==gi
-vnoremap  <silent> <C-j> :m '>+1<CR>gv=gv
-nnoremap  <silent> <C-k> :m .-2<CR>==
-inoremap  <silent> <C-k> <Esc>:m .-2<CR>==gi
-vnoremap  <silent> <C-k> :m '<-2<CR>gv=gv
-map <S-j> 10j
-map <S-k> 10k
+nnoremap  <silent> <A-j> :m .+1<CR>==
+inoremap  <silent> <A-j> <Esc>:m .+1<CR>==gi
+vnoremap  <silent> <A-j> :m '>+1<CR>gv=gv
+nnoremap  <silent> <A-k> :m .-2<CR>==
+inoremap  <silent> <A-k> <Esc>:m .-2<CR>==gi
+vnoremap  <silent> <A-k> :m '<-2<CR>gv=gv
+
 inoremap jk <esc>
 
 
@@ -178,4 +162,9 @@ function! Togglecolor()
         exec('set background=dark')
     endif
 endfunction
+
+
+
+nnoremap  <silent> <F4> :w<CR> :PymodeRun<CR>
+inoremap  <silent> <F4> <Esc>:w<CR> :PymodeRun<CR>
 
