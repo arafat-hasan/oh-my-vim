@@ -29,7 +29,7 @@ Plugin 'VundleVim/Vundle.vim'
 "=================== MY BUNDLES START ===============
 " original repos on GitHub:
 
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'gmarik/vundle'
 Plugin 'Yggdroot/indentLine'
@@ -56,9 +56,9 @@ Plugin 'honza/vim-snippets' "This repository contains snippets files for various
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'milkypostman/vim-togglelist'
 "Plugin 'tpope/vim-dispatch'
-Plugin 'terryma/vim-multiple-cursors'
+Plugin 'mg979/vim-visual-multi'
 Plugin 'tpope/vim-surround'
-Plugin 'arafat-hasan/vim_cp'
+" Plugin 'arafat-hasan/vim_cp'
 
 " non-GitHub repos
 "Plugin 'git://git.wincent.com/command-t.git'
