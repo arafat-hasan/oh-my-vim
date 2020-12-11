@@ -41,11 +41,12 @@ Plugin 'gabrielsimoes/cfparser.vim'
 "Plugin 'Igorjan94/codeforces.vim'
 "Plugin 'junegunn/vim-easy-align'    "Dependency for Igorjan94/codeforces.vim
 Plugin 'christoomey/vim-run-interactive'
-Plugin 'Raimondi/delimitMate'
+"Plugin 'Raimondi/delimitMate'
 Plugin 'ex-surreal/vim-std-io'
 Plugin 'lervag/vimtex'
 Plugin 'junegunn/goyo.vim'
 Plugin 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plugin 'wakatime/vim-wakatime'
 
 "----Following used by snipmate----
 Plugin 'MarcWeber/vim-addon-mw-utils'
@@ -185,7 +186,9 @@ let g:formatter_yapf_style = 'google'
 
 " vim_cp configs end
 
+set nocompatible
+let &rtp  = '~/.vim/bundle/vimtex,' . &rtp
+let &rtp .= ',~/.vim/bundle/vimtex/after'
+filetype plugin indent on
 
-
-
-
+let g:vimtex_latexmk_options='-pdf -pdflatex="xelatex -synctex=1 \%S \%O" -verbose -file-line-error -interaction=nonstopmode'
