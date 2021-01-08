@@ -1,7 +1,7 @@
 
 
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-"let g:ycm_global_ycm_extra_conf = "‍‍‍‍‌‌‌‌~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
+"let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
@@ -47,6 +47,7 @@ Plugin 'lervag/vimtex'
 Plugin 'junegunn/goyo.vim'
 Plugin 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plugin 'wakatime/vim-wakatime'
+Plugin 'tpope/vim-fugitive'
 
 "----Following used by snipmate----
 Plugin 'MarcWeber/vim-addon-mw-utils'
