@@ -49,3 +49,5 @@ tags
 # bundle path
 /bundle/
 /pack/
+
+.DS_Store

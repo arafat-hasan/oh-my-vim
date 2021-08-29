@@ -29,7 +29,7 @@ Plugin 'VundleVim/Vundle.vim'
 "=================== MY BUNDLES START ===============
 " original repos on GitHub:
 
-Plugin 'ycm-core/YouCompleteMe'
+"Plugin 'ycm-core/YouCompleteMe'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'gmarik/vundle'
 Plugin 'Yggdroot/indentLine'
@@ -52,7 +52,7 @@ Plugin 'tpope/vim-fugitive'
 "----Following used by snipmate----
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+Plugin  'SirVer/ultisnips'
 Plugin 'honza/vim-snippets' "This repository contains snippets files for various programming languages.
 "
 "Plugin 'vim-syntastic/syntastic'
