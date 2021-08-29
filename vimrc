@@ -1,36 +1,9 @@
-"
 " FILE: vimrc
-"
-" @author: Md. Arafat Hasan Jenin   <arafathasanjenin[at]gmail[dot]com>
-"
+" @author: Md. Arafat Hasan Jenin   <opendoor.arafat[at]gmail[dot]com>
 " LINK:
-"
 " DATE CREATED: 09-02-17 20:00:11 (+06)
-" LAST MODIFIED: 09-12-17 15:35:43 (+06)
+" LAST MODIFIED: 13-08-21 01:35:43 (+06)
 "
-" VIM Configuration File. Optimized for C/C++ development
-" also useful for other languages.
-"
-" DEVELOPMENT HISTORY:
-" Date         Version     Description
-" --------------------------------------------------------------
-" 09-02-17     1.0         File Created
-" 09-12-17     1.4         Cleanize, added many things
-"
-"     ___          ___           ___                       ___
-"    /  /\        /  /\         /__/\        ___          /__/\
-"   /  /:/       /  /:/_        \  \:\      /  /\         \  \:\
-"  /__/::\      /  /:/ /\        \  \:\    /  /:/          \  \:\
-"  \__\/\:\    /  /:/ /:/_   _____\__\:\  /__/::\      _____\__\:\
-"     \  \:\  /__/:/ /:/ /\ /__/::::::::\ \__\/\:\__  /__/::::::::\
-"      \__\:\ \  \:\/:/ /:/ \  \:\~~\~~\/    \  \:\/\ \  \:\~~\~~\/
-"      /  /:/  \  \::/ /:/   \  \:\  ~~~      \__\::/  \  \:\  ~~~
-"     /__/:/    \  \:\/:/     \  \:\          /__/:/    \  \:\
-"     \__\/      \  \::/       \  \:\         \__\/      \  \:\
-"                 \__\/         \__\/                     \__\/
-"
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
@@ -280,5 +253,4 @@ if (empty($TMUX))
     set termguicolors
   endif
 endif
-
 

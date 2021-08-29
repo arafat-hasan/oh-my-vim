@@ -159,8 +159,6 @@ let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
 
 " vim_cp configs start
-
-
 let g:developer="Arafat Hasan Jenin"
 let g:mail="opendoor.arafat[at]gmail[dot]com"
 let g:version="1.0"
@@ -174,7 +172,6 @@ let g:verdict_col=12    "Row and col number to write verdict
 "https://github.com/Chiel92/vim-autoformat
 let g:formatter_yapf_style = 'google'
 
-" vim_cp configs end
 
 let &rtp  = '~/.vim/bundle/vimtex,' . &rtp
 let &rtp .= ',~/.vim/bundle/vimtex/after'
@@ -189,10 +186,5 @@ let g:gruvbox_italic='1'
 let g:gruvbox_underline='1'
 "let g:gruvbox_invert_indent_guides=1
 set background=dark    " Setting dark mode
-"set termguicolors
 
 autocmd vimenter * ++nested colorscheme gruvbox
-
-
-
-
