@@ -1,20 +1,12 @@
 
 
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-"let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
-"imap <Tab> <C-P>
-set completeopt-=preview
-
-
-"*******vim plugin manager*****
-"execute pathogen#infect()
 
 
 "//////////////////////////////// VUNDLE START /////////////////////////////////
 
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -22,9 +14,9 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
-" Keep Plugin commands between vundle#begin/end.
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
 
 "=================== MY BUNDLES START ===============
 " original repos on GitHub:
@@ -32,7 +24,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'ycm-core/YouCompleteMe'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'gmarik/vundle'
-Plugin 'Yggdroot/indentLine'
+"Plugin 'Yggdroot/indentLine'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -52,14 +44,21 @@ Plugin 'tpope/vim-fugitive'
 "----Following used by snipmate----
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
-Plugin  'SirVer/ultisnips'
-Plugin 'honza/vim-snippets' "This repository contains snippets files for various programming languages.
+"Plugin  'SirVer/ultisnips'
+"Plugin 'honza/vim-snippets' "This repository contains snippets files for various programming languages.
 "
 "Plugin 'vim-syntastic/syntastic'
 Plugin 'milkypostman/vim-togglelist'
 "Plugin 'tpope/vim-dispatch'
 Plugin 'mg979/vim-visual-multi'
 Plugin 'tpope/vim-surround'
+
+Plugin 'morhetz/gruvbox'
+
+" Adds file type icons to Vim plugins
+"Plugin 'ryanoasis/vim-devicons'
+
+
 " Plugin 'arafat-hasan/vim_cp'
 
 " non-GitHub repos
@@ -71,10 +70,19 @@ Plugin 'tpope/vim-surround'
 
 "=================== MY BUNDLES END ===============
 
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
 
+" All of your Plugins must be added before the following line
 call vundle#end()            " required
-
-
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
 " Brief help
 " :PluginList       - lists configured plugins
 " :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
@@ -84,55 +92,36 @@ call vundle#end()            " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
 "====================== PLUGIN CONFIG AND VAR START ======================
 
-" variables
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='solarized'
-"let g:airline_theme='dark'
-let g:airline_solarized_normal_green = 1
-"let g:airline_solarized_dark_inactive_border = 1
-"let g:airline_base16_improved_contrast = 1
-let g:airline_base16_solarized = 1
-let g:NERDDefaultAlign = 'left'
 
-"*****Yggdroot/indentLine*****
-let g:indentLine_char = '┆'
-"let g:indentLine_setColors = 0
-let g:indentLine_color_term = 239
-"let g:indentLine_color_gui = '#FFFFFF'
+filetype plugin indent on
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='gruvbox'
+
+
 
 "vim-std-io
 let g:std_io_window_height = 15
 
 "Using a mouse, NERDTree
 let g:NERDTreeMouseMode=3
+let g:NERDDefaultAlign = 'left'
 
-" ==================== vim-syntastic/syntastic ===================
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
-
-"let g:syntastic_enable_signs = 1
-
-"let g:syntastic_cpp_checkers = ['gcc']
-
-"let g:syntastic_auto_jump = 1
-"let g:syntastic_enable_balloons = 1
-
-"let g:syntastic_cpp_compiler = 'g++'
-"let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra'
-" ========== vim-syntastic/syntastic ===============
 
 
 "
 " YouCompleteMe options
 "
+
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
+"let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
+
+let g:ycm_key_list_select_completion=[]
+let g:ycm_key_list_previous_completion=[]
+set completeopt-=preview
 
 let g:ycm_register_as_syntastic_checker = 1 "default 1
 let g:Show_diagnostics_ui = 1 "default 1
@@ -176,7 +165,7 @@ let g:developer="Arafat Hasan Jenin"
 let g:mail="opendoor.arafat[at]gmail[dot]com"
 let g:version="1.0"
 let g:description="Deleted code is debugged code."
-let g:verdict="Almost Accepted"
+let g:verdict="Undefined"
 let g:verdict_row=11    "Row and col number to write verdict
 let g:verdict_col=12    "Row and col number to write verdict
 
@@ -187,9 +176,23 @@ let g:formatter_yapf_style = 'google'
 
 " vim_cp configs end
 
-set nocompatible
 let &rtp  = '~/.vim/bundle/vimtex,' . &rtp
 let &rtp .= ',~/.vim/bundle/vimtex/after'
-filetype plugin indent on
 
 let g:vimtex_latexmk_options='-pdf -pdflatex="xelatex -synctex=1 \%S \%O" -verbose -file-line-error -interaction=nonstopmode'
+
+
+" gruvbox
+let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_bold='1'
+let g:gruvbox_italic='1'
+let g:gruvbox_underline='1'
+"let g:gruvbox_invert_indent_guides=1
+set background=dark    " Setting dark mode
+"set termguicolors
+
+autocmd vimenter * ++nested colorscheme gruvbox
+
+
+
+
