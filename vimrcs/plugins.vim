@@ -55,6 +55,9 @@ Plugin 'tpope/vim-surround'
 
 Plugin 'morhetz/gruvbox'
 
+" Go language support
+Plugin 'fatih/vim-go'
+
 " Adds file type icons to Vim plugins
 "Plugin 'ryanoasis/vim-devicons'
 
