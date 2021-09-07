@@ -21,7 +21,7 @@ Plugin 'VundleVim/Vundle.vim'
 "=================== MY BUNDLES START ===============
 " original repos on GitHub:
 
-"Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'gmarik/vundle'
 "Plugin 'Yggdroot/indentLine'
@@ -41,14 +41,30 @@ Plugin 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plugin 'wakatime/vim-wakatime'
 Plugin 'tpope/vim-fugitive'
 
-"----Following used by snipmate----
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-"Plugin  'SirVer/ultisnips'
-"Plugin 'honza/vim-snippets' "This repository contains snippets files for various programming languages.
+
+
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+
+" Trigger configuration. You need to change this to something other than <tab> if you use one of the following:
+" - https://github.com/Valloric/YouCompleteMe
+" - https://github.com/nvim-lua/completion-nvim
+let g:UltiSnipsExpandTrigger = "<Tab>"
+let g:UltiSnipsJumpForwardTrigger="<Tab>"
+let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
+
+
+
 "
-"Plugin 'vim-syntastic/syntastic'
-Plugin 'milkypostman/vim-togglelist'
+Plugin 'vim-syntastic/syntastic'
+"Plugin 'milkypostman/vim-togglelist'
 "Plugin 'tpope/vim-dispatch'
 Plugin 'mg979/vim-visual-multi'
 Plugin 'tpope/vim-surround'
@@ -62,7 +78,7 @@ Plugin 'fatih/vim-go'
 "Plugin 'ryanoasis/vim-devicons'
 
 
-" Plugin 'arafat-hasan/vim_cp'
+Plugin 'arafat-hasan/vim_cp'
 
 " non-GitHub repos
 "Plugin 'git://git.wincent.com/command-t.git'
@@ -109,6 +125,7 @@ let g:airline_theme='gruvbox'
 "vim-std-io
 let g:std_io_window_height = 15
 
+
 "Using a mouse, NERDTree
 let g:NERDTreeMouseMode=3
 let g:NERDDefaultAlign = 'left'
@@ -122,8 +139,10 @@ let g:NERDDefaultAlign = 'left'
 let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 "let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
 
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
+let g:ycm_key_list_select_completion = ['<C-N>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
+
+
 set completeopt-=preview
 
 let g:ycm_register_as_syntastic_checker = 1 "default 1
@@ -154,6 +173,11 @@ let g:ycm_confirm_extra_conf = 1
 let g:ycm_goto_buffer_command = 'same-buffer' "[ 'same-buffer', 'horizontal-split', 'vertical-split', 'new-tab' ]
 let g:ycm_filetype_whitelist = { '*': 1 }
 let g:ycm_key_invoke_completion = '<C-Space>'
+
+let g:ycm_complete_in_comments = 1 
+let g:ycm_seed_identifiers_with_syntax = 1 
+let g:ycm_collect_identifiers_from_comments_and_strings = 1 
+
 
 " YouCompleteMe options end
 
@@ -191,3 +215,18 @@ let g:gruvbox_underline='1'
 set background=dark    " Setting dark mode
 
 autocmd vimenter * ++nested colorscheme gruvbox
+
+
+" vim-go
+"let g:go_def_mode='gopls'
+"let g:go_info_mode='gopls'
+"au filetype go inoremap <buffer> . .<C-x><C-o>
+
+
+
+" vim-surround
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
