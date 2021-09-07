@@ -221,7 +221,8 @@ autocmd vimenter * ++nested colorscheme gruvbox
 "let g:go_def_mode='gopls'
 "let g:go_info_mode='gopls'
 "au filetype go inoremap <buffer> . .<C-x><C-o>
-
+" Use new vim 8.2 popup windows for Go Doc
+let g:go_doc_popup_window = 1
 
 
 " vim-surround
