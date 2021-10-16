@@ -1,28 +1,11 @@
 /*
  * FILE: {untitled}
- *
  * @author: {developer} <{mail}>
- *
  * LINK:
- *
  * DATE CREATED: {datetime}
  * LAST MODIFIED:
- *
  * VERDICT:
- *
- * DEVELOPMENT HISTORY:
- * Date         Version     Description
- * --------------------------------------------------------------------
- * {date}     {version}         {description}
- *
- *               _/  _/_/_/_/  _/      _/  _/_/_/  _/      _/
- *              _/  _/        _/_/    _/    _/    _/_/    _/
- *             _/  _/_/_/    _/  _/  _/    _/    _/  _/  _/
- *      _/    _/  _/        _/    _/_/    _/    _/    _/_/
- *       _/_/    _/_/_/_/  _/      _/  _/_/_/  _/      _/
  */
-
-///////////////////////////////////////////////////////////////////////
 
 #include <stdint.h>  //uint32_t
 #include <unistd.h>  // unsigned int sleep(unsigned int seconds);
