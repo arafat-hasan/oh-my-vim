@@ -83,7 +83,6 @@ typedef vector<long long> vl;
 #define EPS 1e-7
 #define MAX 10000007  // 1e7+7
 
-////////////////////////// START HERE //////////////////////////
 
 int main() {
   ios_base::sync_with_stdio(false);
