@@ -40,6 +40,7 @@ Plugin 'junegunn/goyo.vim'
 Plugin 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 Plugin 'wakatime/vim-wakatime'
 Plugin 'tpope/vim-fugitive'
+Plugin 'OmniSharp/omnisharp-vim'
 
 
 

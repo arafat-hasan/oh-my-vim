@@ -134,7 +134,7 @@ then
 elif [ "$1" == "compile-build" ]
 then
     echo
-    g++ -g -Wall -Wextra -Wshadow -Wfloat-equal -pedantic -std=c++11 -O2 -Wformat=2 -Wconversion -lm "$2"
+    g++ -g -Wall -Wextra -Wshadow -Wfloat-equal -pedantic -std=c++17 -O2 -Wformat=2 -Wconversion -Wno-sign-conversion -lm "$2"
     return=$?
     if [ $return -eq 0 ]
     then
@@ -151,10 +151,10 @@ then
     echo
     if [ "$extension" == "cpp" ]
     then
-        g++ -c -g -Wall -Wextra -Wshadow -Wfloat-equal -pedantic -std=c++11 -O2 -Wformat=2 -Wconversion -lm "$2"
+        g++ -c -g -Wall -Wextra -Wshadow -Wfloat-equal -pedantic -std=c++17 -O2 -Wformat=2 -Wconversion -Wno-sign-conversion -lm "$2"
     elif [ "$extension" == "c" ]
     then
-        gcc -c -g -Wall -Wextra -Wshadow -Wfloat-equal -pedantic -std=c++11 -O2 -Wformat=2 -Wconversion -lm "$2"
+        gcc -c -g -Wall -Wextra -Wshadow -Wfloat-equal -pedantic -std=c++17 -O2 -Wformat=2 -Wconversion -Wno-sign-conversion -lm "$2"
     elif [ "$extension" == "java" ]
     then
         javac -d /media/Softwares/Programming "$2"
