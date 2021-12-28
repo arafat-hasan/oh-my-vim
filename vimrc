@@ -100,6 +100,11 @@ set novisualbell
 set t_vb=
 set tm=500
 
+
+"split positon
+set splitbelow
+set splitright
+
 " Properly disable sound on errors on MacVim
 if has("gui_macvim")
     autocmd GUIEnter * set vb t_vb=
