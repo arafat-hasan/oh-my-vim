@@ -89,6 +89,11 @@ map <leader>uvs :!clear && ~/.vim/vim_uva-tool_run_script.sh '%:p'<CR>
 map <leader>uvi :!uva-tool -login
 map <leader>uvo :!uva-tool -logout
 
+" leetcode.vim doesn't bind any key mappings by default. Put the following lines to your .vimrc to set up the key mappings.
+nnoremap <leader>ll :LeetCodeList<cr>
+nnoremap <leader>lt :LeetCodeTest<cr>
+nnoremap <leader>ls :LeetCodeSubmit<cr>
+nnoremap <leader>li :LeetCodeSignIn<cr>
 
 
 " Show/Hide GUI Menus
