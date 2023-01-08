@@ -241,4 +241,4 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 "leetcode-vim
-let g:leetcode_browser = 'firefox'
+let g:leetcode_browser = 'chrome'
