@@ -71,6 +71,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'mg979/vim-visual-multi'
 Plugin 'tpope/vim-surround'
 
+"  Retro groove color scheme for Vim 
 Plugin 'morhetz/gruvbox'
 
 " Go language support
@@ -214,6 +215,7 @@ let &rtp .= ',~/.vim/bundle/vimtex/after'
 
 " gruvbox
 let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_contrast_light='soft'
 let g:gruvbox_bold='1'
 let g:gruvbox_italic='1'
 let g:gruvbox_underline='1'

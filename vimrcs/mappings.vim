@@ -75,8 +75,6 @@ nnoremap  <silent> <A-k> :m .-2<CR>==
 inoremap  <silent> <A-k> <Esc>:m .-2<CR>==gi
 vnoremap  <silent> <A-k> :m '<-2<CR>gv=gv
 
-inoremap jk <esc>
-
 
 " ============= Un/Comment debug =======================
 map <leader>dbc :97,$s/debug/\/\/debug/gi<CR> :97,$s/nl;/\/\/nl;/gi<CR> :97,$s/ckk;/\/\/ckk;/gi <CR>
