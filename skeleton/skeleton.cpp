@@ -3,8 +3,8 @@
  * @author: {developer} <{mail}>
  * LINK:
  * DATE CREATED: {datetime}
- * LAST MODIFIED:
- * VERDICT:
+ * LAST MODIFIED: {datetime}
+ * VERDICT: {verdict}
  */
 
 #include <stdint.h>  //uint32_t

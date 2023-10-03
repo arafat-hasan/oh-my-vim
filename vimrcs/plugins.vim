@@ -81,7 +81,7 @@ Plugin 'fatih/vim-go'
 "Plugin 'ryanoasis/vim-devicons'
 
 
-Plugin 'arafat-hasan/vim_cp'
+" Plugin 'arafat-hasan/vim_cp'
 
 " non-GitHub repos
 "Plugin 'git://git.wincent.com/command-t.git'
@@ -143,9 +143,6 @@ let g:python3_host_prog="/usr/bin/python3/"
 " YouCompleteMe options
 "
 
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-"let g:ycm_global_ycm_extra_conf = "~/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
-
 let g:ycm_key_list_select_completion = ['<C-N>', '<Down>']
 let g:ycm_key_list_previous_completion = ['<C-P>', '<Up>']
 
@@ -192,14 +189,13 @@ let g:ycm_collect_identifiers_from_comments_and_strings = 1
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_auto_refresh_includes = 1
 
-" vim_cp configs start
+" vim-std-io configs start
 let g:developer="Arafat Hasan Jenin"
 let g:mail="opendoor.arafat[at]gmail[dot]com"
 let g:version="1.0"
 let g:description="Deleted code is debugged code."
 let g:verdict="Undefined"
-let g:verdict_row=11    "Row and col number to write verdict
-let g:verdict_col=12    "Row and col number to write verdict
+
 
 
 
