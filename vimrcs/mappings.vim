@@ -119,19 +119,6 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 "================Commenting blocks of code End================
 
 
-
-
-
-
-
-" Open Quickfix window automatically after running :make
-" augroup OpenQuickfixWindowAfterMake
-"     autocmd QuickFixCmdPost [^l]* nested cwindow
-"     autocmd QuickFixCmdPost    l* nested lwindow
-" augroup END
-
-
-
 "let g:is_IOwindow_open = 0
 
 "function! Prepare_IO_window()
