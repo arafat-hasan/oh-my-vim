@@ -125,10 +125,10 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 
 
 " Open Quickfix window automatically after running :make
-augroup OpenQuickfixWindowAfterMake
-    autocmd QuickFixCmdPost [^l]* nested cwindow
-    autocmd QuickFixCmdPost    l* nested lwindow
-augroup END
+" augroup OpenQuickfixWindowAfterMake
+"     autocmd QuickFixCmdPost [^l]* nested cwindow
+"     autocmd QuickFixCmdPost    l* nested lwindow
+" augroup END
 
 
 

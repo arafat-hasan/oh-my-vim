@@ -67,7 +67,7 @@ let g:UltiSnipsEditSplit="vertical"
 "
 Plugin 'vim-syntastic/syntastic'
 "Plugin 'milkypostman/vim-togglelist'
-"Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-dispatch'
 Plugin 'mg979/vim-visual-multi'
 Plugin 'tpope/vim-surround'
 
