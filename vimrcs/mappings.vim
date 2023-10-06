@@ -119,30 +119,6 @@ noremap <silent> ,cu :<C-B>silent <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<
 "================Commenting blocks of code End================
 
 
-"let g:is_IOwindow_open = 0
-
-"function! Prepare_IO_window()
-"    if g:is_IOwindow_open ==# 0
-"        botright 40vsplit output_buffer
-""       setlocal buftype=nofile noswapfile switchbuf=useopen
-"        split /media/Softwares/Programming/input.txt
-"        let g:is_IOwindow_open = 1
-"    endif
-"endfunction
-
-
-"function! MySplit()
-
-"    call Prepare_IO_window()
-
-"endfunction
-
-
-"map <leader>s :call MySplit()<CR><CR>
-
-
-
-
 map <leader>w :!nasm -f elf32 '%:p' -o a.o  && ld -m elf_i386 a.o -o a.out && ./a.out<CR>
 
 function! Togglecolor()
