@@ -1,1 +1,0 @@
-setlocal mp=python3\ %
